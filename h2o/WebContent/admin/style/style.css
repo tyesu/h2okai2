@@ -1,0 +1,184 @@
+@charset "UTF-8";
+/*
+検索用：ログイン、コマンド、在庫操作
+*/
+/* 共通設定...........................*/
+html, body, h1, p, ul, li {
+  font-family: 'Times New Roman', Times, serif;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #5a5a5a;
+  position: relative;
+  background-image: url("./back4.webp");
+  background-size: cover;
+  z-index: 1;
+}
+
+/* ログイン画面(基準デザイン)....................................*/
+header {
+  color: aliceblue;
+}
+
+header h1 {
+  margin: 40px;
+}
+
+.wrapper {
+  margin: 40px;
+}
+
+.wrapper main {
+  position: relative;
+  height: 75vh;
+  background-color: aliceblue;
+  z-index: 10;
+  opacity: 0.9;
+  text-align: center;
+}
+
+.wrapper main form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.2);
+  width: 400px;
+  height: 250px;
+  border-radius: 20px;
+}
+
+.wrapper main form h2 {
+  margin: 24px 0 24px 0;
+}
+
+.wrapper main form input {
+  width: 120px;
+}
+
+.wrapper main form input:last-child {
+  -webkit-transform: translate(65px, 10px);
+          transform: translate(65px, 10px);
+}
+
+.wrapper main form .inputLabel {
+  display: inline-block;
+  text-align: left;
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+/* コマンド画面 .........................................*/
+#commandMain {
+  text-align: left;
+  position: relative;
+  height: 80vh;
+  background-color: aliceblue;
+  z-index: 10;
+  opacity: 0.9;
+  text-align: center;
+}
+
+#commandMain .forms {
+  position: absolute;
+  top: 15%;
+  left: 40px;
+}
+
+#commandMain .forms .commandForm {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: none;
+  height: 48px;
+}
+
+#commandMain .forms .commandForm p {
+  width: 160px;
+}
+
+#commandMain .forms .commandForm input {
+  width: 80px;
+  height: 24px;
+}
+
+/* 在庫操作画面
+.................................................*/
+#inventoryMain {
+  height: 100vh;
+}
+
+#inventoryMain .formContainer {
+  width: 100%;
+  text-align: left;
+}
+
+#inventoryMain .formContainer form {
+  padding-left: 40px;
+  width: 90%;
+  height: 80%;
+}
+
+#inventoryMain .formContainer form h2 {
+  margin-bottom: 24px;
+}
+
+#inventoryMain .formContainer form .inputLabel {
+  display: block;
+  width: 400px;
+  margin: 16px 0 16px 0;
+}
+
+#inventoryMain .formContainer form .btn {
+  -webkit-transform: translate(0px, 100px);
+          transform: translate(0px, 100px);
+}
+
+/* 商品登録画面.......................................*/
+#purchasingMain {
+  text-align: left;
+  position: relative;
+  height: 100vh;
+}
+
+#purchasingMain .formContainer {
+  width: 100%;
+}
+
+#purchasingMain .formContainer .inputLabel {
+  margin: 24px 0;
+}
+
+#purchasingMain .formContainer .shortText {
+  margin-right: 24px;
+}
+
+#purchasingMain .formContainer .longText textarea {
+  width: 300px;
+  height: 185px;
+}
+
+#purchasingMain .formContainer h2 {
+  padding: 24px;
+  padding-top: 16px;
+  display: block;
+}
+
+#purchasingMain .formContainer .forms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 40px;
+  width: 90%;
+  height: 80%;
+}
+
+#purchasingMain .formContainer .forms .btn {
+  height: 40px;
+}
+/*# sourceMappingURL=style.css.map */
